@@ -41,7 +41,7 @@
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
 
 
-  networking.hostName = "carbon"; # Define your hostname.
+  networking.hostName = "hydrogen"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary

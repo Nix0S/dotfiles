@@ -24,18 +24,18 @@ let
   lib = nixpkgs.lib;
 in
 {
-  carbon = lib.nixosSystem {                               # Desktop profile
+  hydrogen = lib.nixosSystem {                               # Desktop profile
     inherit system;
     specialArgs = {
       inherit inputs user location;
       host = {
-        hostName = "carbon";
+        hostName = "hydrogen";
         mainMonitor = "Virtual-1";
 #        secondMonitor = "DP-1";
       };
     };                                                      # Pass flake variable
     modules = [                                             # Modules that are used.
-      ./carbon
+      ./hydrogen
       ./configuration.nix
 
       home-manager.nixosModules.home-manager {              # Home-Manager module that is used.
@@ -44,13 +44,13 @@ in
         home-manager.extraSpecialArgs = {
           inherit user;
           host = {
-            hostName = "carbon";     #For Xorg iGPU  | Videocard 
+            hostName = "hydrogen";     #For Xorg iGPU  | Videocard 
             mainMonitor = "Virtual-1"; #HDMIA3         | HDMI-A-1
 #            secondMonitor = "DP-1";   #DP1            | DisplayPort-1
           };
         };                                                  # Pass flake variable
         home-manager.users.${user} = {
-          imports = [(import ./home.nix)] ++ [(import ./carbon/home.nix)];
+          imports = [(import ./home.nix)] ++ [(import ./hydrogen/home.nix)];
         };
       }
     ];
