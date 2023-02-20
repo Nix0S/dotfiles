@@ -163,12 +163,12 @@
       #};
     };
     iconTheme = {
-      name = "Papirus-Dark";
-      package = pkgs.papirus-icon-theme;
+      name = "Adwaita Icon Theme";
+      package = pkgs.gnome.adwaita-icon-theme;
     };
     font = {
-      #name = "JetBrains Mono Medium";
-      name = "FiraCode Nerd Font Mono Medium";
+      name = "JetBrains Mono Medium";
+      #name = "FiraCode Nerd Font Mono Medium";
     };                                        # Cursor is declared under home.pointerCursor
   };
 
