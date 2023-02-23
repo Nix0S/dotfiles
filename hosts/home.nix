@@ -45,7 +45,7 @@
       # File Management
       gnome.file-roller # Archive Manager
       okular            # PDF Viewer
-      pcmanfm           # File Manager
+      xfce.thunar           # File Manager
       p7zip             # Zip Encryption
       rsync             # Syncer - $ rsync -r dir1/ dir2/
       unzip             # Zip Files
@@ -153,9 +153,11 @@
   gtk = {                                     # Theming
     enable = true;
     theme = {
-      name = "Dracula";
+      name = "Nordzy";
+      #name = "Dracula";
       #name = "Catppuccin-Mocha-Compact-Mauve-Dark";
-      package = pkgs.dracula-theme;
+      package = pkgs.nordzy-icon-theme;
+      #package = pkgs.dracula-theme;
       #package = pkgs.catppuccin-gtk.override {
       #  accents = ["mauve"];
       #  size = "compact";
@@ -164,11 +166,11 @@
     };
     iconTheme = {
       name = "Adwaita Icon Theme";
-      package = pkgs.gnome.adwaita-icon-theme;
+      package = pkgs.gnome.nordzy-icon-theme;
     };
     font = {
-      name = "JetBrains Mono Medium";
-      #name = "FiraCode Nerd Font Mono Medium";
+      #name = "JetBrains Mono Medium";
+      name = "FiraCode Nerd Font Mono Medium";
     };                                        # Cursor is declared under home.pointerCursor
   };
 

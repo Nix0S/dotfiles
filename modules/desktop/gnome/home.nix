@@ -44,7 +44,7 @@
       color-scheme = "prefer-dark";
       enable-hot-corners = false;
       #clock-show-weekday = true;
-      gtk-theme = "Adwaita-dark";
+      #gtk-theme = "Adwaita-dark";
     };
     # "org/gnome/desktop/session" = {                 # Doesn't seem to work
     #   idle-delay = "uint32 900";

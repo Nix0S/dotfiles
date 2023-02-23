@@ -85,7 +85,7 @@ in
             state = "floating";
             sticky = true;
           };
-          "Pcmanfm" = {
+          "thunar" = {
             state = "floating";
           };
           "plexmediaplayer" = {
