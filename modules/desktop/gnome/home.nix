@@ -15,9 +15,7 @@
         "firefox.desktop"
         "org.gnome.Nautilus.desktop"
         "discord.desktop"
-        "retroarch.desktop"
-        "com.parsecgaming.parsec.desktop"
-        "org.remmina.Remmina.desktop"
+        # "org.remmina.Remmina.desktop"
         "virt-manager.desktop"
         # "blueman-manager.desktop"
         # "pavucontrol.desktop"
@@ -27,8 +25,8 @@
         "trayIconsReloaded@selfmade.pl"
         "blur-my-shell@aunetx"
         "drive-menu@gnome-shell-extensions.gcampax.github.com"
-        "dash-to-panel@jderose9.github.com"
-        "just-perfection-desktop@just-perfection"
+        # "dash-to-panel@jderose9.github.com"
+        # "just-perfection-desktop@just-perfection"
         "caffeine@patapon.info"
         "clipboard-indicator@tudmotu.com"
         "horizontal-workspace-indicator@tty2.io"
@@ -45,8 +43,8 @@
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
       enable-hot-corners = false;
-      clock-show-weekday = true;
-      #gtk-theme = "Adwaita-dark";
+      #clock-show-weekday = true;
+      gtk-theme = "Adwaita-dark";
     };
     # "org/gnome/desktop/session" = {                 # Doesn't seem to work
     #   idle-delay = "uint32 900";
@@ -127,26 +125,26 @@
       name = "open-file-browser";
     };
 
-    "org/gnome/shell/extension/dash-to-panel" = {     # Possibly need to set this manually
-      panel-position = ''{"0":"TOP","1":"Top"}'';
-      panel-sizes = ''{"0":24,"1":24}'';
-      panel-element-positions-monitors-sync = true;
-      appicon-margin = 0;
-      appicon-padding = 4;
-      dot-position = "TOP";
-      dot-style-focused = "SOLID";
-      dot-style-unfocused = "DOTS";
-      animate-appicon-hover = true;
-      animate-appicon-hover-animation-travel = "{'SIMPLE': 0.14999999999999999, 'RIPPLE': 0.40000000000000002, 'PLANK': 0.0}";
-      isolate-monitors = true;
-    };
-    "org/gnome/shell/extensions/just-perfection" = {
-      theme = true;
-      activities-button = false;
-      app-menu = false;
-      clock-menu-position = 1;
-      clock-menu-position-offset = 7;
-    };
+    # "org/gnome/shell/extension/dash-to-panel" = {     # Possibly need to set this manually
+    #   panel-position = ''{"0":"TOP","1":"Top"}'';
+    #   panel-sizes = ''{"0":24,"1":24}'';
+    #   panel-element-positions-monitors-sync = true;
+    #   appicon-margin = 0;
+    #   appicon-padding = 4;
+    #   dot-position = "TOP";
+    #   dot-style-focused = "SOLID";
+    #   dot-style-unfocused = "DOTS";
+    #   animate-appicon-hover = true;
+    #   animate-appicon-hover-animation-travel = "{'SIMPLE': 0.14999999999999999, 'RIPPLE': 0.40000000000000002, 'PLANK': 0.0}";
+    #   isolate-monitors = true;
+    # };
+    # "org/gnome/shell/extensions/just-perfection" = {
+    #   theme = true;
+    #   activities-button = false;
+    #   app-menu = false;
+    #   clock-menu-position = 1;
+    #   clock-menu-position-offset = 7;
+    # };
     "org/gnome/shell/extensions/caffeine" = {
       enable-fullscreen = true;
       restore-state = true;
@@ -217,9 +215,9 @@
     gnomeExtensions.tray-icons-reloaded
     gnomeExtensions.blur-my-shell
     gnomeExtensions.removable-drive-menu
-    gnomeExtensions.dash-to-panel
+    # gnomeExtensions.dash-to-panel
     # gnomeExtensions.battery-indicator-upower
-    gnomeExtensions.just-perfection
+    # gnomeExtensions.just-perfection
     gnomeExtensions.caffeine
     gnomeExtensions.clipboard-indicator
     gnomeExtensions.workspace-indicator-2
